@@ -19,7 +19,6 @@ exports.createProduct = (req, res) => {
         
         Product.create({
             name:   req.body.name,
-            short:  req.body.short,
             desc:   req.body.desc,
             price:  req.body.price,
             image:  req.body.image,
@@ -44,3 +43,4 @@ exports.createProduct = (req, res) => {
         })
     })
 }
+
