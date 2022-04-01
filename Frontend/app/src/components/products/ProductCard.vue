@@ -7,7 +7,7 @@
           <div class="mask"></div>
         </router-link>
       </div>
-      <div class="card-body">
+    <div class="card-body">
         <h5 class="card-title">{{ product.name }}</h5>
         <p class="card-text"> {{ product.desc }}</p>
         <!-- <router-link type="button" class="btn btn-info" :to="{ name: 'productDetails', params: { id: product._id }}">Read more</router-link> -->

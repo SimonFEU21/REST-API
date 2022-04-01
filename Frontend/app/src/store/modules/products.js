@@ -6,7 +6,8 @@ export default {
         product: null
     },
     getters: {
-        products: state => state.products
+        products: state => state.products,
+        product: state => state.product
     },
     mutations: {
         SET_PRODUCTS: (state, products) => {
@@ -18,11 +19,11 @@ export default {
       },
     actions: {
         getProducts: async ({commit}) => {
-            const res = await axios.get('http://localhost:9999/api/products')
+            const res = await axios.get('http://localhost:9999/api/products/')
             commit('SET_PRODUCTS', res.data)
         },
         getProductById: async ({commit}, id) => {
-            const res = await axios.get('products/' + id)
+            const res = await axios.get('http://localhost:9999/api/products/' + id)
             commit('SET_PRODUCT', res.data)
         }
     }

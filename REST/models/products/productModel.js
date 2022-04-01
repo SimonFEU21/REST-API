@@ -14,10 +14,7 @@ exports.getProducts = async (req, res) => {
             message: 'Something went wrong when fetching the products',
             err
         })
-
-
     }
-
 }
 
 
@@ -191,6 +188,7 @@ exports.deleteProduct = (req, res) =>  {
             message: 'Failed to delete product',
             err
           })
+          
         })
     })
   
