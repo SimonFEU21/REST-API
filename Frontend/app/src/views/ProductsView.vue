@@ -1,11 +1,11 @@
 <template>
   <div>
-    <productCardDeck />
+    <ProductCardDeck />
   </div>
 </template>
 
 <script>
-import {mapActions } from 'vuex'
+import { mapActions } from 'vuex'
 import ProductCardDeck from '../components/products/ProductCardDeck.vue'
 export default {
   components: { ProductCardDeck },
@@ -15,7 +15,6 @@ export default {
   created() {
     this.getProducts()
   }
-
 }
 </script>
 
